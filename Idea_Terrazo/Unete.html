@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unete a nosotros</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Cantarell:ital@1&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo" >
+                <a href="index.html">
+                    <img class="imagen-logo" src="Images/FPSN -LOGO_001.jpg" alt="Logo"/>
+                </a>
+                <div>Forma parte de la sonrisa de un niño</div>
+            </div>
+            <div class="menu">
+                <ul >
+                    <li><a class="menu-link" href="/">Inicio</a></li>
+                    <li><a class="menu-link" href="Nosotros.html">Quienes somos</a></li>
+                    <li><a class="menu-link" href="Unete.html">Lleva sonrisas</a></li>
+                    <li><a class="menu-link" href="Obras.html">Nuestras obras</a></li>
+                    <li class="botondonar"><a class="menu-link" href="Donativos.html">DONAR</a></li>
+                </ul> 
+            </div>   
+        </nav>
+    </header>
+    <main class="main ">
+        <h1 class="titulo-nosotros">SE PARTE DE NUESTRO EQUIPO</h1>
+    </main>   
+
+    <form action="" class="formulario">
+        <fieldset>
+            <legend class="titulos">REGISTRA TUS DATOS</legend>
+            <div>
+                <label for="Nombre">Nombres y apellidos:</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Ingrese sus Nombres y Apellidos">     
+            </div>
+            <br>              
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email"  placeholder="Ingrese su email">    
+            </div>
+            <br/>
+            <div>
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="Sexo" id="Masculino">
+                <label for="Femenino">Femenino</label>
+                <input type="radio" name="Sexo" id="Femenino">
+            </div>
+            <br/>
+            <div>
+                <label for="ciudad">Ciudad</label>
+                <select name="ciudad" id="ciudad">
+                <option value="Lima">Lima</option>
+                <option value="Huanayo">Huancayo</option>
+                <option value="Jauja">Jauja</option>
+                <option value="Tarma">Tarma</option>
+                <option value="Cuzco">Cuzco</option>
+            </select>
+            </div>
+            <br>
+            <div>
+                <label for="informacion">Desea recibir nuestra información mensual</label>
+                <input type="checkbox" name="informacion" id="informacion"> 
+            </div>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe un comentario"></textarea>
+            <br/>
+            <input type="submit" value="ENVIAR"/>
+            <input type="reset" value="Limpiar Campos"/>
+        </fieldset>
+    </form>
+   
+
+    <footer>
+        <h4>Contacto: +51 985391916</h4>
+    </footer>
+</body>
+</html>
