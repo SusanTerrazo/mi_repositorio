@@ -1,0 +1,119 @@
+.main{
+    background-color: #6f88f580;
+    background-image: linear-gradient(to top, #6f88f596,rgba(247, 240, 240, 0.473));     
+    height: 15rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+    p{
+        visibility: hidden;
+    }
+
+    h1 {
+        color: $color-primario;
+        align-items: center;
+        text-align: center;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 3rem;
+        position: absolute;
+        top: 2rem;
+        display: flex; 
+    
+    }
+
+    .botondonar{
+        position: absolute;
+        justify-content: center;
+        bottom: 2rem;
+
+    }
+
+    .menu-link{
+      
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+    }
+}
+
+@media (min-width: 780px) {
+    .main{
+        background-color: #6f88f580;
+        background-image: linear-gradient(to top, #6f88f596,rgba(247, 240, 240, 0.473)), url(/Images/IMG_9757.JPG);
+        display: flex;
+        justify-content: center;
+        height: 25rem;
+        position: relative;
+
+        h1{
+            font-size: 4rem;
+        }
+
+        p{
+            color: rgb(67, 97, 238);
+            visibility: visible;
+            font-family: 'Indie Flower', cursiva;
+            text-align: right;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            text-align: center;
+        }
+
+        .botondonar {
+            position: absolute;
+            justify-content: right;
+            right: 3rem;
+        }
+    }
+}
+
+@media (min-width: 1750px) {
+    .main{
+        background-color: #6f88f580;
+        background-image: linear-gradient(to top, #6f88f596,rgba(247, 240, 240, 0.473)), url(/Images/IMG_9757.JPG);
+        display: flex;
+        justify-content: center;
+        height: 35rem;
+        position: relative;
+
+        h1 {
+            font-size: 5rem;
+            position: absolute;
+            top: 15rem;
+            left: 1rem;
+        }
+
+        p{
+            color: rgb(67, 97, 238);
+            visibility: visible;
+            font-family: 'Indie Flower', cursiva;
+            text-align: right;
+            font-weight: bold;
+            font-size: 2rem;
+            position: absolute;
+            text-align: center;
+            right: 8rem;
+            top: 8rem;
+            width: 40rem;
+
+
+        }
+
+        .botondonar {
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 23rem;
+            bottom: 8rem;
+        }
+    }
+
+}
+
+

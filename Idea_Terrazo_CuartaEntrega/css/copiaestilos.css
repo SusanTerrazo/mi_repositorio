@@ -1,0 +1,533 @@
+/*Aplicación de diseño al encabezado*/
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    
+    background-color: #441f99;
+    background-image: linear-gradient(to right, #441f99, rgba(247, 240, 240, 0.473));
+    box-shadow: 0 0.5rem 1rem rgb(100, 98, 98);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    text-align:center;    
+    padding: 0.5rem 0; 
+   }
+
+.logo{
+    color: white;
+    padding: 0 0.5rem;
+}
+
+.imagen-logo{
+    width: 6rem;
+    height: 6rem;
+}
+
+/*Menú hamburguesa*/
+.nav-toggle {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 3rem;
+    height: 3rem;
+    padding: 0em;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    transition: opacity 250ms ease;
+    position: absolute;
+    right: 2rem;
+    
+  }
+
+  .hamburger {
+    width: 50%;
+    position: relative;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    width: 100%;
+  }
+  
+  .hamburger::before {
+    transform: translateY(-6px);
+  }
+  
+  .hamburger::after {
+    transform: translateY(3px);
+  }
+
+/*Colocar menu de navegación al lado derecho*/
+
+.menu{
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+    align-items: center;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem ;
+}
+ 
+ul{
+    
+    box-align: center;
+    visibility: hidden;
+    list-style-type: none;
+    font-size: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.menu-link{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.botondonar {
+    background-color: #F72585;
+    height: auto;
+    width: 10rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+
+}
+
+.botondonar:hover {
+    background-color: rgb(67, 97, 238);
+    transform:scale(1.1);
+}
+/*aplicar mobile-first*/
+
+
+
+/*Formato parte superior*/
+
+.main{
+    background-color: #6f88f580;
+    height: 15rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    
+}
+
+.main-2{
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    color: #3A0CA3;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 3rem;
+    position: absolute;
+    top: 2rem;
+    
+
+}
+
+
+/*Boton donar 2*/
+
+.botondonar-main{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3rem;
+}
+
+
+.parrafo {
+    color: rgb(67, 97, 238);
+    visibility: hidden;
+    font-family: 'Indie Flower', cursiva;
+    text-align: right;
+    height: 100px;
+    font-weight: bold;
+    width: 400px;
+    font-size: 30px;
+    position: absolute;
+    right: 150px;
+    top: 100px;
+    text-align: justify;
+}
+
+/*main Nosotros*/
+.titulo-nosotros{
+    text-align: center;
+    position: relative;
+}
+
+.main-nosotros{
+    background-image: url(Images/WhatsApp\ Image\ 2021-08-29\ at\ 7.21.37\ PM.jpeg);
+    background-size: cover;
+    background-position:inherit ;
+}
+.parrafo-nosotros{   
+    width: 1000px;
+    top: 350px;
+    
+}
+/*Titulo para main corto*/
+
+.titulo-main-2
+{
+    position: relative;
+    text-align: center;
+    top: 0;
+    font-size: 80px;
+}
+/*Video*/
+
+.video{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Aplicación de flex cuerpo-index*/
+
+.acceso{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.enlace{
+    background-color:#6d83e2;
+    width: 293px;
+    height: 352px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Indie Flower', cursiva;
+    font-weight: bold;
+    font-size: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.enlace-titulo
+{
+    text-align: center;
+    
+}
+
+/*Formato DONAR*/
+
+.enlace-donar{
+    
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.enlace-donar-efectivo{
+    background-image: url(Images/10808647-coins-and-banknotes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.enlace-donar-viveres{
+    background-color: white;
+    background-image: url(Images/1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.enlace-donar-titulo
+{
+    background-color: white;
+    color: #4361EE;
+    font-family: 'Indie Flower', cursiva;
+}
+
+.enlace-donar-juguetes{
+    background-color: white;
+    background-image: url(Images/toys-object-for-small-kids-to-play-cartoon-bear-duck-truck-ball-robot-and-pyramid-on-blocks-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*formato de tabla - Conocenos*/
+
+table {
+    border: 3px solid;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    background-color: rgba(146, 162, 233, 0.753);
+    border: 1px solid;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: normal;
+    font-size: 25px;
+    padding: 10px;
+}
+
+td{
+    font-family: 'Balsamiq Sans', cursive; 
+    font-size: 20px;
+    text-align: center;
+}
+
+.titulos{
+    font-size: 25px;
+    color: #3A0CA3;
+    font-family: 'Cantarell', sans-serif;
+    font-weight: bold;
+}
+
+.descripcion{
+    height: 100px;
+    width: 600px;
+    color: #F72585;
+}
+
+span{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    text-decoration: none;
+}
+/* posision de formulario*/
+.formulario {
+   
+    font-family: 'Cantarell', sans-serif;
+    
+}
+
+/*Formato footer*/
+footer{
+    background-color: #4361EE;
+    color: white;
+    font-size: 20px;
+    height: 100px;
+}
+
+h4{
+    color: white;
+}
+
+/*Obras aplicación de grid*/
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    }
+    
+    .contenedor{
+        background-color: #4361EE;
+        width: 90%;
+        height: auto;
+        display: grid;
+        margin: 20px;
+    
+    }
+    
+    .imagen{
+        min-height: 200px;
+        min-width: 200px;
+        background-color: pink;
+        border: 2px solid #4361EE;
+    }
+
+        /* plicacion de transformacion*/
+
+    .imagen:hover {
+        transform: scale(1.2);
+        transform: 0.7s;
+        filter:grayscale(2) ;
+    }
+    
+    
+    .imagen1{
+        background-color: wheat;
+        grid-column: 1;
+        grid-row: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        background-image: url(Images/grids/pexels-alex-azabache-3757136.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .imagen2{
+        grid-area: "2";
+        background-color: violet;
+        background-image: url(Images/grids/pexels-julia-volk-5270671.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .imagen3{
+        grid-area: "3";
+        background-color: purple;
+        grid-column: 2;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        background-image: url(Images/grids/pexels-julia-volk-5198285.jpg);
+        background-size: cover;
+        background-position: center ;
+    }
+    
+    .imagen4{
+        grid-area: "4";
+        background-image: url(Images/grids/pexels-trace-hudson-6921111.jpg);
+        background-size: cover;
+        background-position: center ;
+    }
+    
+    .imagen5{
+        grid-area: "5";
+        background-image: url(Images/grids/pexels-junior-machado-3452236.jpg);
+        background-size: cover;
+        background-position: center ;
+    }
+    
+    .imagen6{
+        grid-area: "6";
+        grid-column: 1;
+        grid-row: 2;
+        grid-column-start:4;
+        grid-column-end:5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-image: url(Images/grids/pexels-alex-azabache-3290067.jpg);
+        background-size: cover;
+        background-position: center ;
+    
+    }
+    
+    .imagen7{
+        grid-area: "7";
+        background-image: url(Images/grids/pexels-viajero-cool-3156779.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    .imagen8{
+        grid-area: "8";
+        grid-column: 2;
+        grid-column-start:2;
+        grid-column-end:4;
+        background-image: url(Images/grids/pexels-luis-quintero-5212402.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media (min-width: 1024px) {
+
+        .menu{
+            visibility: visible;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+           
+        }
+    
+        ul {
+            visibility: visible;
+        }
+    
+        .nav-toggle {
+            display: none;
+        }
+    
+        .fila {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+        .main{
+            background-color: #6f88f580;
+            background-image: linear-gradient(to top, #6f88f596,rgba(247, 240, 240, 0.473)), url(Images/IMG_9757.JPG);
+            display: flex;
+            justify-content: center;
+            height: 556px;
+            position: relative;
+            
+        }
+
+        h1 {
+            color: #3A0CA3;
+            text-align: center;
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 100px;
+            position: absolute;
+            top: 200px;
+            left: 10px;
+        
+        }
+
+        .parrafo {
+            color: rgb(67, 97, 238);
+            visibility: visible;
+            font-family: 'Indie Flower', cursiva;
+            text-align: right;
+            height: 100px;
+            font-weight: bold;
+            width: 400px;
+            font-size: 30px;
+            position: absolute;
+            right: 150px;
+            top: 100px;
+            text-align: justify;
+        }
+        .botondonar-main{
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            position: absolute;
+            right: 250px;
+            bottom: 100px;
+        }
+    }
+ 

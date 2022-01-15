@@ -1,0 +1,107 @@
+@import "general";
+@import "header";
+@import "mainCorto";
+@import "footer";
+
+/*Obras aplicación de grid*/
+
+    
+    .contenedor{
+        background-color: #4361EE;
+        width: 90%;
+        height: auto;
+        display: grid;
+        margin: 20px;
+    
+    }
+    
+    .imagen{
+        min-height: 200px;
+        min-width: 200px;
+        background-color: pink;
+        border: 2px solid #4361EE;
+
+        :hover {
+            transform: scale(1.2);
+            transform: 0.7s;
+            filter:grayscale(2) ;
+        }
+    }
+    
+    
+    .imagen1{
+        background-color: wheat;
+        grid-column: 1;
+        grid-row: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        background-image: url(/Images/grids/pexels-alex-azabache-3757136.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .imagen2{
+        grid-area: "2";
+        background-color: violet;
+        background-image: url(/Images/grids/pexels-julia-volk-5270671.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .imagen3{
+        grid-area: "3";
+        background-color: purple;
+        grid-column: 2;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        background-image: url(/Images/grids/pexels-julia-volk-5198285.jpg);
+        background-size: cover;
+        background-position: center ;
+    }
+    
+    .imagen4{
+        grid-area: "4";
+        background-image: url(/Images/grids/pexels-trace-hudson-6921111.jpg);
+        background-size: cover;
+        background-position: center ;
+    }
+    
+    .imagen5{
+        grid-area: "5";
+        background-image: url(/Images/grids/pexels-junior-machado-3452236.jpg);
+        background-size: cover;
+        background-position: center ;
+    }
+    
+    .imagen6{
+        grid-area: "6";
+        grid-column: 1;
+        grid-row: 2;
+        grid-column-start:4;
+        grid-column-end:5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-image: url(/Images/grids/pexels-alex-azabache-3290067.jpg);
+        background-size: cover;
+        background-position: center ;
+    
+    }
+    
+    .imagen7{
+        grid-area: "7";
+        background-image: url(/Images/grids/pexels-viajero-cool-3156779.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    .imagen8{
+        grid-area: "8";
+        grid-column: 2;
+        grid-column-start:2;
+        grid-column-end:4;
+        background-image: url(/Images/grids/pexels-luis-quintero-5212402.jpg);
+        background-size: cover;
+        background-position: center;
+    }

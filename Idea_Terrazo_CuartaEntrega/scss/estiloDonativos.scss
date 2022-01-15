@@ -1,0 +1,67 @@
+@import "general";
+@import "header";
+@import "mainCorto";
+@import "footer";
+@import "formulario";
+
+/*Formato DONAR*/
+
+.acceso{
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.enlace{
+    background-color:#6d83e2;
+    width: 293px;
+    height: 352px;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Indie Flower', cursiva;
+    font-weight: bold;
+    font-size: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.enlace-donar{
+    
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.enlace-donar-efectivo{
+    background-image: url(/Images/10808647-coins-and-banknotes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.enlace-donar-viveres{
+    background-color: white;
+    background-image: url(/Images/1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.enlace-donar-titulo
+{
+    background-color: white;
+    color: #4361EE;
+    font-family: 'Indie Flower', cursiva;
+}
+
+.enlace-donar-juguetes{
+    background-color: white;
+    background-image: url(/Images/toys-object-for-small-kids-to-play-cartoon-bear-duck-truck-ball-robot-and-pyramid-on-blocks-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,36 @@
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+
+.video{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.acceso{
+    padding: 1rem;
+    margin: 1rem;
+ 
+}
+.enlace{
+    background-color:#6d83e2;
+    padding: 1rem;
+    margin: auto;
+    font-family: 'Indie Flower', cursiva;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.enlace-titulo
+{
+    text-align: center;
+    
+}

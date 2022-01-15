@@ -1,0 +1,309 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #3A0CA3;
+  background-image: linear-gradient(to right, #3A0CA3, rgba(247, 240, 240, 0.473));
+  box-shadow: 0 0.5rem 1rem #646262;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.header .logo {
+  color: white;
+  padding: 0 0.5rem;
+}
+.header img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/*MENÚ HAMBURGUESA PANTALLA PEQUEÑA*/
+.nav-toggle {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 3rem;
+  height: 3rem;
+  padding: 0em;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  transition: opacity 250ms ease;
+  position: absolute;
+  right: 2rem;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.menu {
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  align-items: center;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+.menu ul {
+  box-align: center;
+  visibility: hidden;
+  list-style-type: none;
+  font-size: 0;
+  font-family: "Balsamiq Sans", cursive;
+  margin-bottom: 0rem;
+}
+.menu li {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botondonar {
+  background-color: #F72585;
+  height: auto;
+  width: 10rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.botondonar :hover {
+  background-color: #4CC9F0;
+  transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    width: 100%;
+    visibility: visible;
+    position: relative;
+    align-items: center;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+  }
+  .menu ul {
+    box-align: center;
+    visibility: visible;
+    list-style-type: none;
+    font-size: 0;
+    font-family: "Balsamiq Sans", cursive;
+  }
+  .menu li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: auto;
+    padding: 0.5rem;
+  }
+
+  .menu-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+.main {
+  background-color: #6f88f580;
+  background-image: linear-gradient(to top, #6f88f596, rgba(247, 240, 240, 0.473));
+  height: 15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main h1 {
+  color: #3A0CA3;
+  align-items: center;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 3rem;
+  position: absolute;
+  display: flex;
+}
+.main .botondonar {
+  position: absolute;
+  justify-content: center;
+  bottom: 2rem;
+}
+.main .menu-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 780px) {
+  .main {
+    background-color: #6f88f580;
+    background-image: linear-gradient(to top, #6f88f596, rgba(247, 240, 240, 0.473)), url(/Images/IMG_9757.JPG);
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    position: relative;
+  }
+  .main h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1750px) {
+  .main {
+    background-color: #6f88f580;
+    background-image: linear-gradient(to top, #6f88f596, rgba(247, 240, 240, 0.473)), url(/Images/IMG_9757.JPG);
+    display: flex;
+    justify-content: center;
+    height: 22rem;
+    position: relative;
+  }
+  .main h1 {
+    font-size: 8rem;
+    position: absolute;
+  }
+}
+footer {
+  background-color: #4361EE;
+  color: white;
+  font-size: 20px;
+  height: 100px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+h4 {
+  color: white;
+}
+
+form {
+  font-family: "Cantarell", sans-serif;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+}
+form .form-label {
+  display: flex;
+  text-align: left;
+}
+form .titulos {
+  font-size: 2rem;
+  color: #7209B7;
+}
+form .form-check-label {
+  display: flex;
+  text-align: left;
+}
+
+/*Formato DONAR*/
+.acceso {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.enlace {
+  background-color: #6d83e2;
+  width: 293px;
+  height: 352px;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Indie Flower", cursiva;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.enlace-donar {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.enlace-donar-efectivo {
+  background-image: url(/Images/10808647-coins-and-banknotes.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.enlace-donar-viveres {
+  background-color: white;
+  background-image: url(/Images/1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.enlace-donar-titulo {
+  background-color: white;
+  color: #4361EE;
+  font-family: "Indie Flower", cursiva;
+}
+
+.enlace-donar-juguetes {
+  background-color: white;
+  background-image: url(/Images/toys-object-for-small-kids-to-play-cartoon-bear-duck-truck-ball-robot-and-pyramid-on-blocks-free-vector.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=estiloDonativos.css.map */

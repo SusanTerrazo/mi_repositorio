@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #3A0CA3;
+  background-image: linear-gradient(to right, #3A0CA3, rgba(247, 240, 240, 0.473));
+  box-shadow: 0 0.5rem 1rem #646262;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  color: white;
+  padding: 0 0.5rem;
+}
+
+.imagen-logo {
+  width: 6rem;
+  height: 6rem;
+}
+
+/*# sourceMappingURL=estilos.css.map */
