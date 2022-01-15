@@ -1,0 +1,58 @@
+@import "general";
+@import "header";
+@import "main";
+@import "footer";
+
+@media (min-width: 1750px){
+    .main{
+    
+    display: flex;
+    align-items: center;
+    margin: 0;  
+    justify-content: center;
+
+    h1 {
+        position: absolute;
+    }
+    p {
+        position: relative;
+    }
+}
+}
+
+
+/*formato de tabla - Conocenos*/
+
+table {
+    margin: 2rem 0rem;
+    
+    thead {
+    background-color: rgba(146, 162, 233, 0.753);
+    border: 1px solid;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: normal;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    }
+
+    tbody{
+         th{
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: normal;
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+            
+         }
+    }
+    td{
+        font-family: 'Balsamiq Sans', cursive; 
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+
+

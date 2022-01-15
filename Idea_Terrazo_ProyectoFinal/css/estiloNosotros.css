@@ -1,0 +1,332 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #3A0CA3;
+  background-image: linear-gradient(to right, #3A0CA3, rgba(247, 240, 240, 0.473));
+  box-shadow: 0 0.5rem 1rem #646262;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0.5rem 0;
+}
+.header .logo {
+  color: white;
+  padding: 0 0.5rem;
+  position: relative;
+  left: 15rem;
+}
+.header img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.menu-link {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+/*MENÚ HAMBURGUESA PANTALLA PEQUEÑA*/
+.nav-toggle {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 3rem;
+  height: 3rem;
+  padding: 0em;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 2rem;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.menu {
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  font-size: 1rem;
+  font-family: "Balsamiq Sans", cursive;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.menu li {
+  margin-top: 0.75rem;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botondonar {
+  background-color: #F72585;
+  height: auto;
+  width: 10rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.botondonar:hover {
+  background-color: #4CC9F0;
+  transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    width: 100%;
+    visibility: visible;
+    position: relative;
+    align-items: center;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+  }
+  .menu ul {
+    box-align: center;
+    visibility: visible;
+    list-style-type: none;
+    font-size: 0;
+    font-family: "Balsamiq Sans", cursive;
+  }
+  .menu li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: auto;
+    padding: 0.5rem;
+  }
+
+  .menu-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .logo {
+    position: relative;
+    left: auto;
+  }
+}
+.menu--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.main {
+  background-color: #6f88f580;
+  background-image: linear-gradient(to top, #6f88f596, rgba(247, 240, 240, 0.473));
+  height: 15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main p {
+  visibility: hidden;
+}
+.main h1 {
+  color: #3A0CA3;
+  align-items: center;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 3rem;
+  position: absolute;
+  top: 2rem;
+  display: flex;
+}
+.main .botondonar {
+  position: absolute;
+  justify-content: center;
+  bottom: 2rem;
+}
+.main .menu-link {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 780px) {
+  .main {
+    background-color: #6f88f580;
+    background-image: linear-gradient(to top, #6f88f596, rgba(247, 240, 240, 0.473)), url(/Images/IMG_9757.JPG);
+    display: flex;
+    justify-content: center;
+    height: 25rem;
+    position: relative;
+  }
+  .main h1 {
+    font-size: 4rem;
+  }
+  .main p {
+    color: #4361ee;
+    visibility: visible;
+    font-family: "Indie Flower", cursiva;
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+  }
+  .main .botondonar {
+    position: absolute;
+    justify-content: right;
+    right: 3rem;
+  }
+}
+@media (min-width: 1750px) {
+  .main {
+    background-color: #6f88f580;
+    background-image: linear-gradient(to top, #6f88f596, rgba(247, 240, 240, 0.473)), url(/Images/IMG_9757.JPG);
+    display: flex;
+    justify-content: center;
+    height: 35rem;
+    position: relative;
+  }
+  .main h1 {
+    font-size: 5rem;
+    position: absolute;
+    top: 15rem;
+    left: 1rem;
+  }
+  .main p {
+    color: #4361ee;
+    visibility: visible;
+    font-family: "Indie Flower", cursiva;
+    text-align: right;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    right: 8rem;
+    top: 8rem;
+    width: 40rem;
+  }
+  .main .botondonar {
+    font-family: "Balsamiq Sans", cursive;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 23rem;
+    bottom: 8rem;
+  }
+}
+footer {
+  background-color: #4361EE;
+  color: white;
+  font-size: 20px;
+  height: 100px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+h4 {
+  color: white;
+}
+
+@media (min-width: 1750px) {
+  .main {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+  }
+  .main h1 {
+    position: absolute;
+  }
+  .main p {
+    position: relative;
+  }
+}
+/*formato de tabla - Conocenos*/
+table {
+  margin: 2rem 0rem;
+}
+table thead {
+  background-color: rgba(146, 162, 233, 0.753);
+  border: 1px solid;
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: normal;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+table tbody th {
+  font-family: "Balsamiq Sans", cursive;
+  font-weight: normal;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+table td {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=estiloNosotros.css.map */

@@ -1,0 +1,209 @@
+@import "colores";
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    
+    background-color: $color-primario;
+    background-image: linear-gradient(to right, $color-primario, rgba(247, 240, 240, 0.473));
+    box-shadow: 0 0.5rem 1rem rgb(100, 98, 98);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0.5rem 0; 
+    
+   
+
+   .logo{
+    color: white;
+    padding: 0 0.5rem;
+    position: relative;
+    left: 15rem;
+    
+   }
+
+    img {
+        width: 5rem;
+        height: 5rem;
+        
+        
+    }
+}
+
+.menu-link{
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+/*MENÚ HAMBURGUESA PANTALLA PEQUEÑA*/
+
+.nav-toggle {
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 3rem;
+    height: 3rem;
+    padding: 0em;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    transition: opacity 250ms ease;
+    position: absolute;
+    left: 2rem;
+        
+  }
+  .hamburger {
+    width: 50%;
+    position: relative;
+  }
+
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    width: 100%;
+  }
+  
+  .hamburger::before {
+    transform: translateY(-6px);
+  }
+  
+  .hamburger::after {
+    transform: translateY(3px);
+  }
+
+  .menu{
+    width: 100%;
+    visibility: hidden;
+    position: absolute;
+   
+    height: 0;
+    font-size: 1rem;
+    font-family: 'Balsamiq Sans', cursive;
+    
+
+    ul{
+    
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    li{
+      margin-top: 0.75rem;
+    }
+        
+}
+.menu-link{
+      
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.fila {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.botondonar {
+  background-color: $color-secundario;
+  height: auto;
+  width: 10rem;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  
+  }
+
+
+.botondonar:hover {
+    background-color: $color-terciario;
+    transform:scale(1.1);
+}
+
+
+
+  @media (min-width: 1024px) {
+
+    .fila {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu{
+      width: 100%;
+      visibility: visible;
+      position: relative;
+      align-items: center;
+      height: auto;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 2rem;
+  
+      ul{
+      
+          box-align: center;
+          visibility: visible;
+          list-style-type: none;
+          font-size: 0;
+          font-family: 'Balsamiq Sans', cursive;
+      }
+          
+          li {
+  
+              display: inline-block;
+              font-size: 1rem;
+              margin: auto;
+              padding: 0.5rem;
+          }
+        
+      }
+  
+    .menu-link{
+      
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: 'Balsamiq Sans', cursive;
+      
+      }
+
+    .nav-toggle {
+      display: none;
+    }
+
+    .logo{
+      position: relative;
+      left: auto;
+    }
+  
+  
+  }
+
+  .menu--visible{
+    visibility: visible;
+    height: auto;
+    position: relative;
+
+    
+  }
+
+
+
+    
